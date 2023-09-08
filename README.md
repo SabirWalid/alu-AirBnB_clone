@@ -1,5 +1,3 @@
-# alu-AirBnB_clone
-Welcome to the AirBnB clone project! repository
 ![hbnb_logo](https://user-images.githubusercontent.com/109422686/218307997-1d7c029e-bc01-4720-a4d9-c91e29c4a9ec.png)
 <h1>AirBnB Clone Project</h1>
 
