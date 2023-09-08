@@ -40,4 +40,3 @@ class FileStorage:
                 for data in dataset.values():
                     name_of_class = data['__class__']
                     self.new(eval(name_of_class + "(**" + str(data) + ")"))
-
