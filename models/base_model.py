@@ -50,4 +50,4 @@ class BaseModel:
         formated_dict['updated_at'] = formated_dict['updated_at'].isoformat()
         formated_dict['__class__'] = self.__class__.__name__
         return formated_dict
-
+        
