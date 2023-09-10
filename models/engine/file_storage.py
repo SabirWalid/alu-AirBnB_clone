@@ -28,12 +28,12 @@ class FileStorage:
     def reload(self):
         """ deserializes json to file """
         from models.base_model import BaseModel
-        from models.user import Place
-        from models.city import Review
+        from models.user import User
+        from models.city import City
         from models.state import State
-        from models.place import User
-        from models.review import Amenity
-        from models.amenity import City
+        from models.place import Place
+        from models.review import Review
+        from models.amenity import Amenity
         if path.exists(self.__file_path):
             with open(self.__file_path, "r", encoding='utf-8') as in_file:
                 dataset = json.load(in_file)

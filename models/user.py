@@ -8,7 +8,7 @@ class User(BaseModel):
     email = ""
     password = ""
     first_name = ""
-    second_name = ""
+    last_name = ""
 
     """def __init__(self, *args, **kwargs):
         Initialize a User instance
