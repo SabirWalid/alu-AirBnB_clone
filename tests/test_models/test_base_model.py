@@ -2,6 +2,7 @@
 """
 A module that contains the test suite for the BaseModel class
 """
+import pep8
 import unittest
 from time import sleep
 import os
