@@ -80,7 +80,7 @@ class TestCaseFileStorage(unittest.TestCase):
         
     def reload(self):
         if not path.exists(self.dir_path):
-        raise FileNotFoundError("File not found")
+            raise FileNotFoundError("File not found")
     
 
     def test_reload_no_file(self):
