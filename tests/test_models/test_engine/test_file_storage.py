@@ -85,8 +85,14 @@ class TestCaseFileStorage(unittest.TestCase):
             raise FileNotFoundError("File not found")
     
 
-    def test_reload_no_file(self):
-        self.assertRaises(FileNotFoundError, models.storage.reload())
+    #def test_reload_no_file(self):
+     #   self.assertRaises(FileNotFoundError, models.storage.reload())
+     
+    def test_reload(self):
+        model = FileStorage()
+        self.my_model.reload()
+        len_dict = len(model.all())
+        self.assertGreater(len_dict, 0)
 
     def test_reload_with_arg(self):
         with self.assertRaises(TypeError):
