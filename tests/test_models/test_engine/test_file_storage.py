@@ -79,6 +79,8 @@ class TestCaseFileStorage(unittest.TestCase):
         self.assertIn("Review." + rv.id, objs)
         
     def reload(self):
+        print("self.dir_path:", self.dir_path)
+        print("File exists:", path.exists(self.dir_path))
         if not path.exists(self.dir_path):
             raise FileNotFoundError("File not found")
     
