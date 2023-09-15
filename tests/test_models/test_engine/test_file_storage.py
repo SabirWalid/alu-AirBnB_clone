@@ -77,6 +77,11 @@ class TestCaseFileStorage(unittest.TestCase):
         self.assertIn("City." + cy.id, objs)
         self.assertIn("Amenity." + am.id, objs)
         self.assertIn("Review." + rv.id, objs)
+        
+    def reload(self):
+        if not path.exists(self.dir_path):
+        raise FileNotFoundError("File not found")
+    
 
     def test_reload_no_file(self):
         self.assertRaises(FileNotFoundError, models.storage.reload)
