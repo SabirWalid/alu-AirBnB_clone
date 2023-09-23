@@ -1,0 +1,62 @@
+/* Filter styles */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.locations,
+.amenities {
+    position: relative;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.popover {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    z-index: 1;
+}
+
+.popover li {
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.locations h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.popover li:last-child {
+    border-bottom: none;
+}
+
+.popover li:hover {
+    background-color: #EFEFEF;
+}
